@@ -456,7 +456,7 @@ a {
   .box_hebergements {
     width: auto;
     padding: 15px 1%;
-    background-color: none;
+    background-color: white;
     margin: 2% 0;
   }
   .hebergement_titre {
