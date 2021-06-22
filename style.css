@@ -733,5 +733,743 @@ footer ul {
 
   footer a {
     font-weight: lighter;
+    hello@font-face {
+  font-family: "Raleway Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Raleway Regular"), url("font/Raleway-Regular.woff") format("woff");
+}
+
+* {
+  font-family: "Raleway Regular", Arial, sans-serif;
+}
+
+body {
+  max-width: 2500px;
+  margin: 0 1% 0 1%;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 17px;
+}
+
+a {
+  color: black;
+  font-size: 18px;
+}
+
+main {
+  margin: auto;
+  padding: 0 1.5rem;
+}
+
+/* HEADER */
+
+.logo-reservia {
+  width: 150px;
+  padding-top: 20px;
+  margin-left: 1.2rem;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 15fr 1fr 1fr 1fr;
+}
+
+header a {
+  text-decoration: none;
+  padding: 40px 20px 20px 20px;
+  border: 3px transparent solid;
+  border: 3px transparent solid;
+}
+
+.nav-hover:hover {
+  border-top: 3px solid #0065fc;
+  color: #0065fc;
+  text-shadow: 0px 0px 0.5px black;
+}
+
+.inscrire {
+  font-weight: bold;
+  color: #0065fc;
+}
+
+.inscrire:hover {
+  text-shadow: 0px 0px 0.8px black;
+}
+
+/* SEARCH */
+
+.fa-map-marker-alt {
+  background: #f2f2f2;
+  padding: 15px;
+  border-radius: 15px 0 0 15px;
+  font-size: 12px;
+}
+
+.search-bar2 {
+  border: solid 0.1px #f2f2f2;
+  padding: 12px;
+}
+
+.bouton {
+  background: #0065fc;
+  color: white;
+  padding: 10px;
+  border-radius: 0 15px 15px 0px;
+  text-decoration: none;
+}
+
+.fa-search {
+  visibility: hidden;
+  font-size: 0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 20px 0;
+}
+
+/* FILTERS */
+
+.section_filtres {
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filtres {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icone_filtre {
+  display: flex;
+  align-items: center;
+}
+
+.icone_filtre i {
+  color: #0065fc;
+  background: #deebff;
+  padding: 15px;
+  border-radius: 50px;
+  position: absolute;
+  text-align: center;
+  width: 20px;
+  font-size: 20px;
+}
+
+.section_filtres h3:first-child {
+  margin-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.filtres h3:nth-child(n + 2) {
+  margin-right: 20px;
+  padding: 13.5px 10px 13.5px 55px;
+  border: solid 2px #f2f2f2;
+  border-radius: 50px;
+}
+
+.filtres h3:nth-child(n + 2):hover {
+  color: #0065fc;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.info i {
+  margin-right: 10px;
+  border: solid 2px #f2f2f2;
+  padding: 5px;
+  border-radius: 50%;
+  width: 20px;
+  text-align: center;
+  color: #0065fc;
+  position: absolute;
+}
+
+.info p {
+  padding-left: 40px;
+}
+
+/* HEBERGEMENTS A MARSEILLE  */
+
+.fa-star {
+  font-size: 15px;
+}
+
+.hebergements_populaires_box {
+  display: flex;
+}
+
+.box_hebergements {
+  background: #f2f2f2;
+  width: 70%;
+  border-radius: 25px;
+  padding: 25px 30px 0;
+}
+
+.box_hebergements a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hebergement_titre {
+  font-size: 20px;
+}
+
+.box_hebergements ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.box_hebergements li {
+  width: 31%;
+  height: 290px;
+  list-style: none;
+  background: #ffffff;
+  margin-bottom: 25px;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 6px #cecece;
+}
+
+.box_hebergements h3 {
+  margin: 5px 0;
+}
+
+.box_hebergements p {
+  margin: 5px 0;
+}
+
+.image_hebergement {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+
+.titre_hebergement {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 103px;
+  margin-left: 5%;
+}
+
+.box_hebergements i {
+  color: #0065fc;
+}
+
+.hebergement .star_grey {
+  color: #f2f2f2;
+}
+
+.box_hebergements .afficher_plus {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*  Les plus populaires  */
+
+aside {
+  background: #f2f2f2;
+  width: 30%;
+  border-radius: 25px;
+  padding: 30px 30px;
+  margin: 0 0 0 2%;
+}
+
+.box_populaires {
+  display: flex;
+  flex-direction: column;
+}
+
+.top_aside_populaires {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+
+
+.aside_populaires_carte {
+  height: 200px;
+  display: flex;
+  margin: 2% 2%;
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 5px;
+  box-shadow: 1px 1px 6px #cecece;
+  text-decoration: none;
+  color: inherit;
+}
+
+.image_populaire {
+  width: 40%;
+  margin-right: 3%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  object-fit: cover;
+}
+
+.populaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.aside_populaires_carte i {
+  color: #0065fc;
+}
+
+.populaire .star_grey {
+  color: #f2f2f2;
+}
+
+/*  Activité à Marseille  */
+
+.img_activites {
+  display: flex;
+}
+
+.article_activite_marge {
+  margin: 1.5% 2%;
+}
+
+.article_activite_marge_parc {
+  margin: 1.5% 0 1.5% 2%;
+}
+
+.deux_img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.activite_big_img {
+  width: 25%;
+}
+
+article h2 {
+  margin: 50px 0 10px 0;
+}
+.activite_img_toute {
+  border-radius: 25px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.activite_img_toute h3 {
+  margin-left: 20px;
+}
+
+.activite_big_img,
+.box_deux_img {
+  border-radius: 25px;
+  box-shadow: 1px 1px 6px #cecece;
+  margin: 1.5% 0;
+}
+
+.activite_big_pic,
+.activite_small_pic {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.activite_small_pic {
+  height: 200px;
+}
+
+/* FOOTER  */
+
+footer {
+  background: #f2f2f2;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.marge_footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.marge_footer li {
+  list-style: none;
+  width: auto;
+  line-height: 2em;
+}
+
+.marge_footer li h3 {
+  font-size: 18px;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+footer a:hover {
+  font-weight: bold;
+}
+
+footer ul {
+  padding-right: 10%;
+}
+
+/* a:hover des images de la page  */
+
+.top_populaire:hover,
+.hebergement:hover,
+.aside_populaires_carte:hover,
+.activite_big_img:hover,
+.box_deux_img:hover {
+  box-shadow: 0px 0px 20px black;
+}
+
+/* RESPONSIVE */
+
+/*  iPads  */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  /* Les plus populaires */
+
+  .hebergements_populaires_box {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .box_populaires {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding-right: 1px;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-bottom: 2%;
+    margin: auto;
+    padding: 30px 0px;
+  }
+
+  .populaire {
+    padding-left: 5%;
+  }
+
+  .image_populaire {
+    width: 33%;
+  }
+
+  .top_aside {
+    padding: 0px 15px 0px 15px;
+  }
+
+  .top_aside_populaires {
+    padding: 0 2%;
+  }
+
+  .aside_populaires_carte {
+    height: 200px;
+  }
+
+  /* Hébergements à Marseille */
+
+  .box_hebergements {
+    width: auto;
+    padding: 15px 1%;
+    background-color: white;
+    margin: 2% 0;
+  }
+  .hebergement_titre {
+    padding: 2% 0;
+  }
+
+  /* Activités à Marseille */
+
+  .box_deux_img,
+  .activite_big_img {
+    margin: 2%;
+  }
+
+  .activite_big_pic,
+  .moins_courte_img,
+  .activite_small_pic {
+    width: 100%;
+  }
+
+  .activite_img_toute {
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+  /* FILTRES */
+
+  main {
+    padding: 0 0.5rem;
+  }
+
+  /* HEADER */
+
+  header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 2em;
+  }
+
+  header a {
+    font-size: 18px;
+    border: 3px solid transparent;
+  }
+
+  .inscrire {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    text-align: end;
+  }
+
+  .nav-hover {
+    border-bottom: 3px solid #f2f2f2;
+  }
+
+  .nav-hover:hover {
+    border: none;
+    font-weight: bold;
+    border: 3px solid transparent;
+    border-bottom: 3px solid #0065fc;
+  }
+
+  .activite {
+    text-align: end;
+  }
+
+  .section_filtres {
+    flex-direction: column;
+    align-items: baseline;
+    display: flex;
+    margin-top: 10px;
+  }
+
+  /* LES PLUS POPULAIRES */
+
+  .box_populaires {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top_aside_populaires {
+    padding: 0 2%;
+  }
+
+  .hebergements_populaires_box {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  aside {
+    width: 100%;
+    padding: 1% 2% 1% 0;
+    margin-left: 0;
+  }
+  .populaire {
+    padding-left: 5%;
+  }
+
+  .aside_populaires_carte {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 2%;
+  }
+
+  .image_populaire {
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+  }
+
+  /* HEBERGEMENT MARSEILLE */
+
+  .box_hebergements {
+    width: 94%;
+    margin: 4% 0;
+    padding: 2% 3% 1% 3%;
+  }
+
+  .box_hebergements ul {
+    display: flex;
+  }
+
+  .box_hebergements li {
+    width: 100%;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 3%;
+  }
+
+  /* SIZE MODIFICATION */
+
+  .info i {
+    font-size: 10px;
+    padding: 5px 0;
+  }
+  h1 {
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 13px;
+  }
+  section p {
+    margin: 10px 10px;
+  }
+  a {
+    font-size: 10px;
+    color: black;
+  }
+  h1,
+  h2,
+  h3,
+  a {
+    font-weight: bold;
+  }
+  .section_filtres {
+    margin: 10px;
+  }
+
+  /* RECHERCHE */
+  .search {
+    display: flex;
+    margin-left: 20px;
+  }
+  .bouton {
+    border-radius: 10px;
+    padding: 12px;
+  }
+  .search_recherche {
+    display: none;
+  }
+  .fa-search {
+    visibility: visible;
+    font-size: 18px;
+  }
+
+  /* LES PLUS POPULAIRES */
+
+  .image_populaire {
+    width: 40%;
+    border-radius: 25px 0 0 25px;
+    margin-right: 3%;
+    height: 200px;
+    min-width: 130px;
+  }
+  .aside_populaires_carte {
+    display: flex;
+    flex-direction: row;
+  }
+  .populaire {
+    padding-left: 0;
+    width: 60%;
+  }
+
+  /* HEBERGEMENT */
+
+  .box_hebergements {
+    background-color: white;
+  }
+  
+  .activite_big_pic,
+  .activite_small_pic {
+    height: 100px;
+  }
+
+  /* Activités à Marseille */
+
+  .activite_big_img,
+  .activite_pig_pic,
+  .activite_img_toute,
+  .deux_img,
+  .box_deux_img,
+  .activite_small_pic {
+    width: 100%;
+  }
+
+  .activite_big_pic,
+  .activite_small_pic {
+    height: 230px;
+  }
+
+  .activite_big_img,
+  .box_deux_img {
+    margin: 2% 0 4% 0;
+  }
+
+  .img_activites {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article_activite_marge {
+    margin: 0;
+  }
+
+  /* FOOTER */
+
+  .marge_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  footer a {
+    font-weight: lighter;
+  }
+}
+
   }
 }
